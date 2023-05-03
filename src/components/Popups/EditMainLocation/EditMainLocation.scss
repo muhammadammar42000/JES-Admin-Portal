@@ -1,0 +1,113 @@
+.EditMainLocation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 42, 42, 0.534);
+  &_inner {
+    height: 400px;
+    width: 350px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #e7ecf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &_top {
+    height: 313px;
+    width: 100%;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: 111% -118% !important;
+    background-size: 43% !important;
+    background-repeat: no-repeat !important;
+    background: url("../../../assets/Web-Assets-05.png");
+    p {
+      font-size: 23px;
+      color: #52575d;
+      margin-top: 30px !important;
+    }
+    .cross {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 20px;
+      cursor: pointer;
+    }
+  }
+  &_LogoUploader {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+    .uploadFile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    label {
+      cursor: pointer;
+    }
+    .uploadFile + label * {
+      pointer-events: none;
+    }
+    .viewImg {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      border-radius: 100px;
+      margin-top: 10px;
+    }
+    .logo {
+      margin-top: 10px;
+      width: 100px;
+      border-radius: 100px;
+    }
+    .pen {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 25px;
+      cursor: pointer;
+    }
+  }
+}
+
+.manageMainLocationInput {
+  margin-top: 50px;
+}
+
+.manageMainLocationInput label {
+  font-size: 15px;
+  color: #1bb752;
+  font-weight: 600;
+}
+
+.manageMainLocationInput input {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+.manageMainLocationInput input:focus {
+  outline: none;
+}

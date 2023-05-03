@@ -1,0 +1,237 @@
+.registeredUserModal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  z-index: 1000000;
+  background-color: rgba(67, 67, 67, 0.6);
+}
+
+.registereUserModal_inner {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+  width: 400px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  top: 25px;
+  height: calc(900px - 200px);
+  overflow: auto;
+  position: relative;
+}
+
+.registeredUserModal_body {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.selectsection p {
+  cursor: pointer;
+  color: #999;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.whenActive {
+  border-bottom: 2px solid rgb(2, 145, 2);
+}
+
+.profile {
+  &_eCard {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    -moz-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    -webkit-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    -o-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    .name {
+      color: rgb(85, 85, 85);
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .loc {
+      color: #1bb752;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      img {
+        width: 12px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &_date {
+    background: #0f633b;
+    width: 55px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 0 0 9px;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    font-size: 12px;
+    p {
+      border-bottom: 1px solid rgb(231, 231, 231);
+      padding-bottom: 4px;
+    }
+    div {
+      margin-top: 4px;
+      padding-top: 4px;
+    }
+  }
+}
+
+.reportpage {
+  &_allcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    margin: 40px 0;
+  }
+  &_card {
+    background: white;
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    -moz-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    -webkit-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+    -o-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+  }
+  &_cardleft {
+    margin-right: 10px;
+    img {
+      width: 90px;
+      height: 70px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+  &_cardright {
+    width: 100%;
+  }
+  &_rightContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .date {
+      color: #0f633b;
+      font-size: 10px;
+    }
+    img {
+      color: #0f633b;
+      width: 8px;
+      cursor: pointer;
+    }
+    img:hover {
+      color: #1bb752;
+    }
+    .loc {
+      display: flex;
+      color: #1bb752;
+      font-size: 10px;
+      img {
+        width: 11px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &_name {
+    color: #0f633b;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+  }
+  &_location {
+    color: #1bb752;
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+@media (max-width: 750px) {
+  .reportpage {
+    &_allcards {
+      grid-template-columns: 1fr;
+    }
+    &_name {
+      font-size: 14px;
+    }
+    &_location {
+      font-size: 14px;
+    }
+    &_rightContent .loc img {
+      width: 13px;
+    }
+  }
+}
+
+.locationSwiper1 {
+  &_card {
+    // width: 95%;
+    height: 150px;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &_heart {
+    // text-align: right;
+    padding: 7px;
+    img {
+      width: 30px;
+      // margin: 13px;
+      margin-left: auto;
+    }
+  }
+
+  &_name {
+    // width: 230px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #4c4c4c;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  &_loc {
+    cursor: pointer;
+    font-size: 11px;
+    text-align: center;
+    // width: 230px;
+    color: #1bb752;
+    img {
+      width: 10px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.body2 {
+  margin-top: 20px;
+  overflow: scroll;
+  height: 450px;
+}
+
+.body2::-webkit-scrollbar {
+  display: none;
+}
+
+.newbody {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+
+.newbody::-webkit-scrollbar {
+  display: none;
+}

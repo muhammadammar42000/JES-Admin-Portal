@@ -1,0 +1,89 @@
+.reportview {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 1000000;
+  background-color: rgb(67 67 67 / 50%);
+}
+
+.swiper {
+  padding: 0 10px !important;
+}
+
+
+.reportview_inner {
+  background-color: #F0F0F0;
+  box-shadow: 0 0 15px rgb(0 0 0 / 3%);
+  width: 350px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  top: 25px;
+  height: calc(100vh - 300px);
+  overflow: auto;
+  position: relative;
+  /* text-align: center; */
+}
+
+.reportview_inner::-webkit-scrollbar{
+  display: none;
+}
+
+.leafBackground{
+  position: absolute;
+  top: -20px;
+  right: -25px;
+}
+
+
+.reportview_textarea{
+  width: 90%;
+  border: none;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 15px;
+  font-size: 12px;
+  box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+  -moz-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+  -webkit-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+  -o-box-shadow: 0 0 18px rgb(198 198 198 / 79%);
+  text-align: left;
+}
+
+.reportview_textarea .title{
+  font-size: 17px;
+  font-weight: 600;
+  /* color: greenyellow; */
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+
+.reportview_textarea .content {
+  color: gray;
+  margin-top: 10px;
+  max-height: 100px;
+  overflow-y: scroll;
+  font-size: 14px;
+}
+
+.reportview_textarea > .content::-webkit-scrollbar{
+  display: none;
+}
+
+.reportview_image{
+  margin: 15px;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.reportview_swiperimg{
+  width: 70px;
+  height: 60px;
+  border-radius: 10px;
+}

@@ -1,0 +1,450 @@
+.locationView {
+  // background-image: url('../../../images/picture/BG-JES-01.png');
+  // background-size: cover;
+  // background-position: bottom;
+  // min-height: 90vh;
+  // .mycontainer {
+  //     padding: 0 200px;
+  // }
+  &_heading {
+    margin: 20px 0;
+    color: green;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &_main {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_left1 {
+    width: 60%;
+  }
+  &_card {
+    position: relative;
+    background-color: rgb(153, 224, 165);
+    width: 100%;
+    height: 300px;
+    margin: 40px 0;
+    border-radius: 10px;
+  }
+  &_date {
+    width: 46px;
+    position: absolute;
+    font-size: 12px;
+    top: 17px;
+    left: 27px;
+    img {
+      width: 100%;
+    }
+  }
+  &_like {
+    width: 76px;
+    height: 36px;
+    margin-top: 5px;
+  }
+  &_heart3 {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  &_location3 {
+    position: absolute;
+    width: 50px;
+    right: 10px;
+    top: 30%;
+  }
+  &_bottom {
+    position: absolute;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(36, 36, 36, 0.22),
+      rgb(51, 51, 51)
+    );
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 20px;
+    color: #fff;
+    border-radius: 10px;
+    .loc {
+      width: 15px;
+    }
+    .heading {
+      font-weight: 600;
+      font-size: 19px;
+      margin-bottom: 3px;
+      color: rgb(235, 235, 235);
+    }
+  }
+  &_bottomg {
+    position: absolute;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(45 180 92 / 9%),
+      rgb(45 180 92)
+    );
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    height: 60px;
+  }
+  &_star2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 26px;
+    position: absolute;
+    right: 22px;
+    top: -60px;
+    padding: 7px 10px;
+  }
+  &_likeNo {
+    position: absolute;
+    right: 27px;
+    top: 25px;
+    font-size: 12px;
+    color: #fff;
+  }
+  &_gallery {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    img {
+      width: 100%;
+      border-radius: 20px;
+      height: 76px;
+    }
+  }
+  &_green {
+    position: relative;
+    background-color: #287e57;
+    border-radius: 20px;
+    img {
+      opacity: 0.2;
+    }
+    p {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      font-size: 23px;
+      color: #fff;
+    }
+  }
+  &_right1 {
+    background-image: linear-gradient(#ffffff, #cfebd8);
+    border-radius: 120px 0 0 0;
+    width: 40%;
+  }
+  &_pattern {
+    position: relative;
+    img {
+      width: 100%;
+      height: 170px;
+    }
+  }
+  &_tabs {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    gap: 40px;
+    top: 31px;
+    width: 60%;
+    left: 50%;
+    border-bottom: 1px solid rgb(150, 150, 150);
+    transform: translate(-50%, -50%);
+    p {
+      color: gray;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    .active {
+      border-bottom: 2px solid lightgreen;
+    }
+  }
+  &_reviewSection {
+    height: 300px;
+    overflow: auto;
+    margin-top: -40px;
+  }
+  &_singleReview {
+    border-bottom: 1px solid #c2c2c2;
+    margin: 0px 40px 15px 40px;
+    .comment {
+      color: gray;
+      font-size: 11px;
+      margin: 10px 0;
+    }
+  }
+  &_review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_user {
+    display: flex;
+    img {
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+  }
+  &_stars {
+    .name {
+      color: lightgreen;
+      font-weight: 600;
+    }
+    .cMkWlf {
+      padding: 0 !important;
+    }
+  }
+  &_your {
+    margin: 0px 40px 15px 40px;
+    background-color: #fff;
+    padding: 10px;
+    input {
+      width: 100%;
+      margin: 10px 0;
+      border: none;
+      background: #cfebd8;
+      padding: 15px 12px;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none;
+    }
+  }
+  &_inputComment {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+    .cMkWlf {
+      padding: 0 !important;
+    }
+    .name {
+      color: gray;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+  &_btn {
+    text-align: center;
+    button {
+      margin: auto;
+      width: 85%;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 0;
+      box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      background: #1bb752;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_selector {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border-bottom: 1px solid grey;
+
+    p {
+      font-weight: 700;
+      color: grey;
+      cursor: pointer;
+    }
+  }
+
+  &_wrapper {
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
+.activityView_active {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.events_date_rightAlign p {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 4px;
+}
+
+.events_date_rightAlign div {
+  margin-top: 4px;
+  padding-top: 4px;
+}
+
+.selectTab p {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .eventdetail_right {
+    width: 100% !important;
+  }
+  .locationView {
+    .mycontainer {
+      padding: 0 10px !important;
+    }
+    &_main {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &_card {
+      height: 250px;
+    }
+    &_heart {
+      top: 56%;
+    }
+    &_left1 {
+      width: 100%;
+    }
+
+    &_right1 {
+      width: 100%;
+    }
+    // &_gallery {
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
+  }
+  .eventdetail_right {
+    margin-left: 0;
+  }
+}
+// @media (max-width: 1300px) {
+//     .mycontainer {
+//         padding: 0 100px !important;
+//     }
+// }
+
+@media (max-width: 407px) {
+  .locationView {
+    &_right {
+      margin: 40px 0 0 0;
+      // margin: 0 !important;
+    }
+  }
+}
+
+.eventdetail {
+  margin-top: 40px;
+  background: #fff;
+  &_right {
+    margin-left: 20px;
+    width: 30%;
+  }
+  &_mains {
+    padding: 0px 20px;
+    height: 500px;
+    overflow-y: scroll;
+    position: relative;
+  }
+
+  &_mains::-webkit-scrollbar {
+    display: none;
+  }
+
+  &_top {
+    background: #7fb892;
+    background-image: linear-gradient(to left, #7fb892, #cde7ae);
+    padding: 10px 40px;
+  }
+  &_heading {
+    color: #1bb752;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &_text {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 50px;
+  }
+  &_time {
+    display: flex;
+    margin: 10px 0;
+    img {
+      width: 52px;
+      height: 52px;
+      margin-right: 20px;
+    }
+    .opening {
+      margin-right: 30px;
+    }
+  }
+  &_name {
+    color: gray;
+    font-size: 15px;
+  }
+  &_value {
+    color: #1bb752;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &_btn {
+    text-align: center;
+    button {
+      margin: auto;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding: 12px 0;
+      box-shadow: 0 0 15px rgb(0 0 0 / 15%);
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      background: #1bb752;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+  }
+
+  // Card
+
+  .userDetailCard {
+    max-width: 400px;
+
+    &_navIcon {
+      position: absolute;
+      right: 25px;
+      top: 50px;
+      width: 10px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    &_full {
+      position: relative;
+    }
+
+    &_logo {
+      position: relative;
+
+      .heart {
+        position: absolute;
+        bottom: 0px;
+        width: 25px;
+        right: 0px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
